@@ -1,0 +1,6 @@
+C:\Users\szymo\source\repos\ConsoleApp15\ConsoleApp15\obj\Debug\ConsoleApp15.csprojAssemblyReference.cache
+C:\Users\szymo\source\repos\ConsoleApp15\ConsoleApp15\bin\Debug\ConsoleApp15.exe.config
+C:\Users\szymo\source\repos\ConsoleApp15\ConsoleApp15\bin\Debug\ConsoleApp15.exe
+C:\Users\szymo\source\repos\ConsoleApp15\ConsoleApp15\bin\Debug\ConsoleApp15.pdb
+C:\Users\szymo\source\repos\ConsoleApp15\ConsoleApp15\obj\Debug\ConsoleApp15.exe
+C:\Users\szymo\source\repos\ConsoleApp15\ConsoleApp15\obj\Debug\ConsoleApp15.pdb
