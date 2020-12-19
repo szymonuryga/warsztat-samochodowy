@@ -23,7 +23,12 @@ namespace ConsoleApp15
 
         }
 
-        public Klient(string imie, string nazwisko, string pesel, string nrTel) : this()
+        public Klient(string imie, string nazwisko)
+        {
+            Imie = imie;
+            Nazwisko = nazwisko;
+        }
+        public Klient(string imie, string nazwisko, string pesel, string nrTel)
         {
             Imie = imie;
             Nazwisko = nazwisko;

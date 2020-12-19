@@ -22,7 +22,7 @@ namespace GUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        Warsztat warsztat;
+        Warsztat warsztat = new Warsztat();
         public MainWindow()
         {
             InitializeComponent();
