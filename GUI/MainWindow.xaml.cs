@@ -38,7 +38,7 @@ namespace GUI
             lvNaprawy.ItemsSource = new ObservableCollection<Naprawa>(warsztat.Naprawy);
         }
 
-        private void BtnRozlicz_Click(object sender, RoutedEventArgs e)
+        private void BtnUsun_Click(object sender, RoutedEventArgs e)
         {
             if (warsztat is object && lvNaprawy.SelectedIndex > -1)
             {

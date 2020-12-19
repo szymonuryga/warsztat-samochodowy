@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Xml.Serialization;
 
 namespace ConsoleApp15
@@ -12,7 +13,10 @@ namespace ConsoleApp15
 
         public string Email { get => email; set => email = value; }
         public string IdPrac { get => idPrac; set => idPrac = value; }
-
+        [Key]
+        public int pracownikId { get; set; }
+        public int warsztatId { get; set; }
+        public virtual Warsztat warsztatBaza { get; set; }
         static Pracownik()
         {
             licznikPracownikow = 0;

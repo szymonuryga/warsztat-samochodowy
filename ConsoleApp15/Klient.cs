@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Xml.Serialization;
 
 namespace ConsoleApp15
@@ -9,8 +10,9 @@ namespace ConsoleApp15
 
         private string idKlient;
         private static int licznikKlientow;
+        [Key]
+        public int KlientId { get; set; }
 
-        [XmlAttribute]
         public string IdKlient { get => idKlient; }
 
         static Klient()

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,13 @@ namespace ConsoleApp15
     [Serializable]
     public class Warsztat : ICloneable
     {
+
         private List<Naprawa> naprawy;
         private List<Pracownik> pracownicy;
         private string nazwa;
+        [Key]
+        public int warsztatId { get; set; }
+
 
         public Warsztat()
         {
@@ -25,10 +30,32 @@ namespace ConsoleApp15
             this.nazwa = nazwa;
         }
 
-        public List<Naprawa> Naprawy { get => naprawy; set => naprawy = value; }
-        public List<Pracownik> Pracownicy { get => pracownicy; set => pracownicy = value; }
+        public virtual List<Naprawa> Naprawy { get => naprawy; set => naprawy = value; }
+        public virtual List<Pracownik> Pracownicy { get => pracownicy; set => pracownicy = value; }
         public string Nazwa { get => nazwa; set => nazwa = value; }
 
+        public void ZapiszDoBazy()
+        {
+            using (Model1 db = new Model1())
+            {
+                db.warsztatBaza.Add(this);
+                db.SaveChanges();
+            }
+
+        }
+        public static Warsztat OdczytZBazy(int index)
+        {
+            using (Model1 db = new Model1())
+            {
+                int maxindex = db.warsztatBaza.Max(zz => zz.warsztatId);
+                Warsztat wbaza = db.warsztatBaza.Find(maxindex); // Where(r => r.zespolId == maxindex).First();
+                Warsztat w = new Warsztat();
+                w.Nazwa = wbaza.Nazwa;
+                w.Naprawy = wbaza.Naprawy;
+                w.Pracownicy = wbaza.Pracownicy;
+                return w;
+            }
+        }
         public object Clone()
         {
             Warsztat warsztat = new Warsztat();

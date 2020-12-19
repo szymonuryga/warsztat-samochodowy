@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ConsoleApp15
 {
@@ -9,7 +10,8 @@ namespace ConsoleApp15
         string model;
         string nrRejestracyjny;
         string nrVIN;
-
+        [Key]
+        public int samochodId { get; set; }
         public string Marka { get => marka; set => marka = value; }
         public string Model { get => model; set => model = value; }
         public string NrRejestracyjny { get => nrRejestracyjny; set => nrRejestracyjny = value; }

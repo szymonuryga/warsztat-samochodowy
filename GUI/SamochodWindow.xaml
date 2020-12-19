@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="SamochodWindow" Height="324.447" Width="452.918">
-    <Grid>
-        <TextBox x:Name="txtMarka" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Margin="200,11,0,0" FontSize="16"/>
-        <TextBox x:Name="txtModel" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Margin="200,57,0,0" FontSize="16"/>
-        <TextBox x:Name="txtNrRej" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,102,0,0" FontSize="16" HorizontalAlignment="Left" Width="196"/>
-        <TextBox x:Name="txtNrVIN" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Margin="200,144,0,0" FontSize="16"/>
-        <Button x:Name="btnZatwierdz" Content="Zatwierdź" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="50,211,0,0" Height="50" Click="btnZatwierdz_Click"/>
-        <Button x:Name="btnAnuluj" Content="Anuluj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="246,211,0,0" Height="50" RenderTransformOrigin="0.462,0.2" Click="btnAnuluj_Click"/>
-        <Label Content="Marka" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,15,0,0" Width="90" Height="40" FontSize="16"/>
-        <Label Content="Model" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,55,0,0" Width="134" Height="40" FontSize="16"/>
-        <Label Content="Numer Rejestracyjny" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,99,0,0" Width="162" Height="40" FontSize="16"/>
-        <Label Content="VIN" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,141,0,0" Width="100" Height="40" FontSize="16"/>
-    </Grid>
+        Title="SamochodWindow" Height="300" Width="450">
+    <Canvas>
+        <TextBox x:Name="txtMarka" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="16" Canvas.Left="200" Canvas.Top="15"/>
+        <TextBox x:Name="txtModel" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="16" Canvas.Left="200" Canvas.Top="55"/>
+        <TextBox x:Name="txtNrRej" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" HorizontalAlignment="Left" Width="200" Canvas.Left="200" Canvas.Top="99"/>
+        <TextBox x:Name="txtNrVIN" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="16" Canvas.Left="200" Canvas.Top="141"/>
+        <Button x:Name="btnZatwierdz" Content="Zatwierdź" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="50" Click="btnZatwierdz_Click" Canvas.Left="40" Canvas.Top="200" FontSize="16"/>
+        <Button x:Name="btnAnuluj" Content="Anuluj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="50" RenderTransformOrigin="0.462,0.2" Click="btnAnuluj_Click" Canvas.Left="230" Canvas.Top="200" FontSize="16"/>
+        <Label Content="Marka" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="15"/>
+        <Label Content="Model" HorizontalAlignment="Left" VerticalAlignment="Top" Width="134" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="55"/>
+        <Label Content="Numer Rejestracyjny" HorizontalAlignment="Left" VerticalAlignment="Top" Width="162" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="99"/>
+        <Label Content="VIN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="141"/>
+    </Canvas>
 </Window>

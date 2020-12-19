@@ -5,30 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="NaprawaOkno" Height="459.054" Width="800">
-    <Grid Margin="0,0,0,-14">
-        <TextBox x:Name="txtOpis" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="469" Margin="200,10,0,0" FontSize="16"/>
-        <ComboBox x:Name="cbKategoria" Height="40" Margin="202,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.599,-1.288" FontSize="16" HorizontalAlignment="Left" Width="373">
-            <ComboBoxItem x:Name="mechaniczna">mechaniczna</ComboBoxItem>
-            <ComboBoxItem x:Name="blacharska">blacharska</ComboBoxItem>
-            <ComboBoxItem x:Name="lakiernicza">lakiernicza</ComboBoxItem>
-            <ComboBoxItem x:Name="blacharsko_lakiernicza">blacharsko - lakiernicza</ComboBoxItem>
-            <ComboBoxItem x:Name="wymiana_opon">wymiana_opon</ComboBoxItem>
+        Title="NaprawaOkno" Height="400" Width="800">
+    <Canvas Margin="0,0,0,0">
+        <TextBox x:Name="txtOpis" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontSize="16" Canvas.Left="200" Canvas.Top="15"/>
+        <ComboBox x:Name="cbKategoria" Height="40" VerticalAlignment="Top" RenderTransformOrigin="0.599,-1.288" FontSize="16" HorizontalAlignment="Left" Width="300" Canvas.Left="200" Canvas.Top="57">
+            <ComboBoxItem x:Name="mechaniczna" Content="mechaniczna"/>
+            <ComboBoxItem x:Name="blacharska" Content="blacharska"/>
+            <ComboBoxItem x:Name="lakiernicza" Content="lakiernicza"/>
+            <ComboBoxItem x:Name="blacharsko_lakiernicza" Content="blacharsko - lakiernicza"/>
+            <ComboBoxItem x:Name="wymiana_opon" Content="wymiana_opon"/>
         </ComboBox>
-        <TextBox x:Name="txtDataPrzyj" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Margin="201,97,0,0" FontSize="16" HorizontalAlignment="Left" Width="281" Text="dd-MM-yyyy"/>
-        <TextBox x:Name="txtSamochod" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="394" Margin="200,144,0,0" FontSize="16"/>
-        <Button x:Name="btnZatwierdz" Content="Zatwierdź" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="199,325,0,0" Height="50" Click="btnZatwierdz_Click"/>
-        <Button x:Name="btnAnuluj" Content="Anuluj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="423,325,0,0" Height="50" RenderTransformOrigin="0.462,0.2" Click="btnAnuluj_Click"/>
-        <Label Content="Opis" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,15,0,0" Width="90" Height="40" FontSize="16"/>
-        <Label Content="Kategoria" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,57,0,0" Width="90" Height="40" FontSize="16"/>
-        <Label Content="Data Przyjęcia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,99,0,0" Width="145" Height="40" FontSize="16"/>
-        <Label Content="Samochód" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,141,0,0" Width="100" Height="40" FontSize="16"/>
-        <Label Content="Klient" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,183,0,0" Width="90" Height="40" FontSize="16"/>
-        <Button x:Name="btnDodajSamo" Content="Dodaj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="619,147,0,0" Height="38" Click="btnDodajSamo_Click"/>
-        <TextBox x:Name="txtKlient" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Margin="201,189,0,0" FontSize="16" HorizontalAlignment="Left" Width="390" RenderTransformOrigin="0.501,0.56"/>
-        <Button x:Name="btnDodajKlienta" Content="Dodaj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="619,193,0,0" Height="36" Click="btnDodajKlient_Click"/>
-        <Label Content="Pracownik" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,237,0,0" Width="90" Height="40" FontSize="16"/>
-        <ComboBox x:Name="comboBoxPracownicy" HorizontalAlignment="Left" Margin="202,241,0,0" VerticalAlignment="Top" Width="389" Height="36"/>
+        <TextBox x:Name="txtDataPrzyj" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" HorizontalAlignment="Left" Width="120" Text="dd-MM-yyyy" Canvas.Left="200" Canvas.Top="99"/>
+        <TextBox x:Name="txtSamochod" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontSize="16" Canvas.Left="200" Canvas.Top="141"/>
+        <Button x:Name="btnZatwierdz" Content="Zatwierdź" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="50" Click="btnZatwierdz_Click" Canvas.Left="160" Canvas.Top="295" FontSize="16"/>
+        <Button x:Name="btnAnuluj" Content="Anuluj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="50" RenderTransformOrigin="0.462,0.2" Click="btnAnuluj_Click" Canvas.Left="450" Canvas.Top="295" FontSize="16"/>
+        <Label Content="Opis" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="15"/>
+        <Label Content="Kategoria" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="57"/>
+        <Label Content="Data Przyjęcia" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="99"/>
+        <Label Content="Samochód" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="141"/>
+        <Label Content="Klient" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="183"/>
+        <Button x:Name="btnDodajSamo" Content="Dodaj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="40" Click="btnDodajSamo_Click" Canvas.Left="620" Canvas.Top="141"/>
+        <TextBox x:Name="txtKlient" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" HorizontalAlignment="Left" Width="390" RenderTransformOrigin="0.501,0.56" Canvas.Left="200" Canvas.Top="183"/>
+        <Button x:Name="btnDodajKlienta" Content="Dodaj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="40" Click="btnDodajKlient_Click" Canvas.Left="620" Canvas.Top="183"/>
+        <Label Content="Pracownik" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="40" FontSize="16" Canvas.Left="30" Canvas.Top="225"/>
+        <ComboBox x:Name="comboBoxPracownicy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="390" Height="40" Canvas.Left="200" Canvas.Top="225"/>
 
-    </Grid>
+    </Canvas>
 </Window>

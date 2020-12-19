@@ -22,3 +22,5 @@ C:\Users\szymo\source\repos\ConsoleApp15\GUI\obj\Debug\GUI.csproj.GenerateResour
 C:\Users\szymo\source\repos\ConsoleApp15\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\szymo\source\repos\ConsoleApp15\GUI\obj\Debug\GUI.exe
 C:\Users\szymo\source\repos\ConsoleApp15\GUI\obj\Debug\GUI.pdb
+C:\Users\szymo\source\repos\ConsoleApp15\GUI\bin\Debug\EntityFramework.dll
+C:\Users\szymo\source\repos\ConsoleApp15\GUI\bin\Debug\EntityFramework.xml

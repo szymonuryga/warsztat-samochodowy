@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Xml.Serialization;
 
@@ -20,7 +21,8 @@ namespace ConsoleApp15
         private Klient klient;
         private string idNaprawa;
         static int licznik;
-
+        [Key]
+        public int naprawaId { get; set; }
         static Naprawa()
         {
             licznik = 0;
@@ -46,9 +48,9 @@ namespace ConsoleApp15
         public string Opis { get => opis; set => opis = value; }
         public Kategoria Kategoria { get => kategoria; set => kategoria = value; }
         public DateTime DataPrzyjęcia { get => dataPrzyjęcia; set => dataPrzyjęcia = value; }
-        public Pracownik Pracownik { get => pracownik; set => pracownik = value; }
-        public Samochod Samochod { get => samochod; set => samochod = value; }
-        public Klient Klient { get => klient; set => klient = value; }
+        public virtual Pracownik Pracownik { get => pracownik; set => pracownik = value; }
+        public virtual Samochod Samochod { get => samochod; set => samochod = value; }
+        public virtual Klient Klient { get => klient; set => klient = value; }
         [XmlAttribute]
         public string IdNaprawa { get => idNaprawa; set =>idNaprawa = value; }
 

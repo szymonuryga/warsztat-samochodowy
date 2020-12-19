@@ -12,6 +12,12 @@ namespace ConsoleApp15
         // 
         // If you wish to target a different database and/or database provider, modify the 'Model1' 
         // connection string in the application configuration file.
+
+        public virtual DbSet<Warsztat> warsztatBaza { get; set; }
+        public virtual DbSet<Naprawa> naprawy { get; set; }
+        public virtual DbSet<Pracownik> pracownicy { get; set; }
+        public virtual DbSet<Klient> klienci { get; set; }
+        public virtual DbSet<Samochod> samochody { get; set; }
         public Model1()
             : base("name=Model1")
         {

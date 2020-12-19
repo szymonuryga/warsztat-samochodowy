@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="673.557" Width="800">
-    <Canvas Margin="0,0,-47,0">
+        Title="MainWindow" Height="675" Width="805">
+    <Canvas Margin="0,0,0,0">
         <Menu HorizontalAlignment="Stretch" Height="30"  VerticalAlignment="Top" Width="800" Canvas.Left="0">
             <MenuItem Header="Plik" Height="30" Width="150"  RenderTransformOrigin="0,0">
                 <MenuItem Header="Otwórz" HorizontalAlignment="Left" Height="35" Width="150" Click="MenuOtworz_Click" Margin="0,0,0,0"/>
@@ -14,23 +14,23 @@
                 <MenuItem Header="Wyjdź" HorizontalAlignment="Left" Height="35" Width="150" Click="MenuWyjdz_Click" Margin="0,0,0,0"/>
             </MenuItem>
         </Menu>
-        <Label Content="Pracownicy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="40" FontSize="20" Canvas.Left="38" Canvas.Top="107"/>
-        <Label Content="Bieżące naprawy" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="225" FontSize="20" Canvas.Left="306" Canvas.Top="272"/>
-        <TextBox x:Name="txtNazwaWarsztatu" HorizontalAlignment="Left" Height="46" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" FontSize="16" Canvas.Left="269" Canvas.Top="44"/>
-        <ListBox x:Name="lstPracownicy" HorizontalAlignment="Left" Height="158"  VerticalAlignment="Top" Width="481" FontSize="16" Canvas.Left="214" Canvas.Top="109" />
-        <Button x:Name="BtnDodajPrac" Content="Dodaj Pracownika" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="150" FontSize="16" Click="BtnDodajPrac_Click" Canvas.Left="32" Canvas.Top="156"/>
-        <Button x:Name="BtnDodaj" Content="Dodaj" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="182" Click="BtnDodaj_Click" FontSize="16" Canvas.Left="156" Canvas.Top="562"/>
-        <Button x:Name="BtnRozlicz" Content="Usun" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="193" Click="BtnRozlicz_Click" FontSize="16" Canvas.Left="434" Canvas.Top="565"/>
-        <Button x:Name="BtnUsunPrac" Content="Usun Pracownika" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="150" FontSize="16" Click="BtnUsunPrac_Click" Canvas.Left="32" Canvas.Top="210"/>
-        <ListView Height="218" Canvas.Top="329" Width="708" Canvas.Left="46" Name="lvNaprawy">
+        <Label Content="Pracownicy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="40" FontSize="20" Canvas.Left="30" Canvas.Top="107"/>
+        <Label Content="Bieżące naprawy" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="200" FontSize="26" Canvas.Left="300" Canvas.Top="280"/>
+        <TextBox x:Name="txtNazwaWarsztatu" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" FontSize="20" Canvas.Left="250" Canvas.Top="45"/>
+        <ListBox x:Name="lstPracownicy" HorizontalAlignment="Left" Height="158"  VerticalAlignment="Top" Width="560" FontSize="16" Canvas.Left="210" Canvas.Top="108" />
+        <Button x:Name="BtnDodajPrac" Content="Dodaj Pracownika" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="150" FontSize="18" Click="BtnDodajPrac_Click" Canvas.Left="30" Canvas.Top="150"/>
+        <Button x:Name="BtnDodaj" Content="Dodaj" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="180" Click="BtnDodaj_Click" FontSize="22" Canvas.Left="160" Canvas.Top="560"/>
+        <Button x:Name="BtnUsun" Content="Usuń" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="180" Click="BtnUsun_Click" FontSize="22" Canvas.Left="470" Canvas.Top="560"/>
+        <Button x:Name="BtnUsunPrac" Content="Usuń Pracownika" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="150" Click="BtnUsunPrac_Click" Canvas.Left="30" Canvas.Top="210" FontSize="18"/>
+        <ListView Height="218" Canvas.Top="329" Width="740" Canvas.Left="30" Name="lvNaprawy">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Opis}" Header="Opis" Width="200"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Kategoria}" Header="Kategoria" Width="100"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=DataPrzyjęcia}" Header="Data Przyjecia" Width="78"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Klient}" Header="Klient" Width="100"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Samochod.Marka}" Header="Marka" Width="80"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Samochod.Model}" Header="Model" Width="80"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Klient}" Header="Klient" Width="140"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Samochod.Marka}" Header="Marka" Width="82"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Samochod.Model}" Header="Model" Width="70"/>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Pracownik.IdPrac}" Header="Id Prac" Width="70"/>
                 </GridView>
             </ListView.View>

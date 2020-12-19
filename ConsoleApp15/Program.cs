@@ -23,6 +23,9 @@ namespace ConsoleApp15
             app.DodajNaprawe(naprawa2);
             app.DodajPracownika(pracownik);
             app.DodajPracownika(pracownik2);
+            Warsztat w = Warsztat.OdczytZBazy(1);
+            Console.WriteLine(w);
+            /*
             Console.WriteLine(app);
             Console.WriteLine();
             //Console.WriteLine(app.UsunNaprawe("KL-00002/2/WVWAUZ1214124"));
@@ -32,7 +35,7 @@ namespace ConsoleApp15
             app.ZapiszXML("app.xml");
             Warsztat app1 = Warsztat.OdczytajXML("app.xml");
             Console.WriteLine(app1);
-            Console.WriteLine(app.Nazwa);
+            Console.WriteLine(app.Nazwa);*/
         }
     }
 }
