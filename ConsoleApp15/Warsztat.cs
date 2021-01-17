@@ -43,7 +43,7 @@ namespace ConsoleApp15
             }
 
         }
-        public static Warsztat OdczytZBazy(int index)
+        /*public static Warsztat OdczytZBazy(int index)
         {
             using (Model1 db = new Model1())
             {
@@ -55,7 +55,7 @@ namespace ConsoleApp15
                 w.Pracownicy = wbaza.Pracownicy;
                 return w;
             }
-        }
+        }*/
         public object Clone()
         {
             Warsztat warsztat = new Warsztat();
