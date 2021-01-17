@@ -24,7 +24,6 @@ namespace ConsoleApp15
             app.DodajPracownika(pracownik);
             app.DodajPracownika(pracownik2);
             //Warsztat w = Warsztat.OdczytZBazy(1);
-            Console.WriteLine(w);
             /*
             Console.WriteLine(app);
             Console.WriteLine();
